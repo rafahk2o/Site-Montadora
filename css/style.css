@@ -74,7 +74,6 @@ header #logo h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-
 }
 
 #lang-box {
@@ -82,13 +81,11 @@ header #logo h1 {
     position: relative;
     right: 5px;
     margin: 10px 0px;
-
 }
 
 #lang-box .btn-success {
     position: relative;
     right: 0px;
-
 }
 
 .btn-success {
@@ -98,6 +95,36 @@ header #logo h1 {
     box-shadow: 1px 5px 50px #444;
     border: 1px solid #444;
     border-radius: 23px;
+}
+
+.btn-success:hover {
+    background: #ccc;
+    box-shadow: 1px 5px 50px #ccc;
+}
+
+#search-box {
+    position: relative;
+    right: 5px;
+    margin: 20px 0px;
+}
+
+#search {
+    height: 40px;
+    width: 150px;
+    padding: 5px 15px;
+    border-radius: 23px;
+    border: 1px solid #000;
+
+}
+
+header .nav-ico ul{
+    display: flex;
+
+}
+
+header .nav-ico ul li{
+    list-style-type:none;
+    padding: 10px;
 }
 
 #container main {
