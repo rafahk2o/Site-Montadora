@@ -1,0 +1,147 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+@import url(reset.css);
+
+#container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: "header""main""footer";
+    grid-row-gap: 1.1%;
+}
+
+.box-son {
+    min-height: 100px;
+    background: #ccc;
+
+}
+
+#container header {
+    grid-area: header;
+    position: sticky;
+    top: 0;
+    z-index: 90;
+    background: rgba(255, 255, 255, 0.8);
+    box-sizing: border-box;
+    box-shadow: 1px 5px 50 px #555;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#container .left {
+    width: 40%;
+    /*   */
+    /* display: flex; */
+
+}
+
+header .slide-nav ul {
+    display: flex;
+    gap: 3%;
+}
+
+header .slide-nav ul li {
+    list-style: none;
+    padding: 10px;
+}
+
+#container #logo {
+    width: 15%;
+    /* background: lightseagreen; */
+    /* display: flex; */
+    margin: 10px 2.5%;
+}
+
+header #logo h1 {
+    display: flex;
+    width: 150px;
+    height: 150px;
+    /* padding: 10px;  */
+    background: url(../img/logo.png) no-repeat center center;
+    background-size: 110px;
+    margin-left: 45px;
+
+
+}
+
+#container .right {
+    width: 40%;
+    /* background: lightgoldenrodyellow; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+#lang-box {
+    width: 35px;
+    position: relative;
+    right: 5px;
+    margin: 10px 0px;
+
+}
+
+#lang-box .btn-success {
+    position: relative;
+    right: 0px;
+
+}
+
+.btn-success {
+    width: 100px;
+    height: 40px;
+    background: #444;
+    box-shadow: 1px 5px 50px #444;
+    border: 1px solid #444;
+    border-radius: 23px;
+}
+
+#container main {
+    grid-area: main;
+}
+
+#container footer {
+    grid-area: footer;
+}
+
+
+
+
+
+
+
+
+
+
+/* Configuração para Smartphone */
+@media (min-width: 50px) and (max-width: 450px) {
+    body {
+        background: rgb(0, 17, 255);
+    }
+}
+
+/* Configuração para Tablet */
+@media (min-width: 451px) and (max-width: 1024px) {
+    body {
+        background: rgb(0, 255, 55);
+    }
+}
+
+
+/* Configuração para Notebook */
+@media (min-width: 1025px) and (max-width: 1280px) {
+    body {
+        background: rgb(214, 0, 132);
+    }
+}
+
+/* Configuração para Desktop */
+@media (min-width: 1281px) {
+    body {
+        background: rgb(136, 0, 248);
+    }
+}
