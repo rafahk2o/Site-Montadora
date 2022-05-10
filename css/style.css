@@ -3,7 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 } */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&display=swap');
+
 @import url(reset.css);
+
+body {
+    font-family: 'Raleway', 'sans serif';
+    color: #555;
+}
 
 #container {
     display: grid;
@@ -68,6 +75,9 @@ header #logo h1 {
 
 }
 
+
+
+
 #container .right {
     width: 40%;
     /* background: lightgoldenrodyellow; */
@@ -91,10 +101,11 @@ header #logo h1 {
 .btn-success {
     width: 100px;
     height: 40px;
-    background: #444;
-    box-shadow: 1px 5px 50px #444;
-    border: 1px solid #444;
+    background: #999;
+    box-shadow: 1px 5px 25px #999;
+    border: 1px solid #999;
     border-radius: 23px;
+    transition: 0.5s;
 }
 
 .btn-success:hover {
@@ -107,24 +118,61 @@ header #logo h1 {
     position: relative;
     right: 5px;
     margin: 20px 0px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: #999;
+    border-radius: 40px;
+
 }
 
 #search {
     height: 40px;
-    width: 150px;
-    padding: 5px 15px;
+    width: 200px;
+    /* padding: 5px 15px; */
     border-radius: 23px;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
+    border: none;
+    background: none;
+    font-size: 16px;
+    color: white;
+    width: 0;
+    transition: .5s;
 
 }
 
-header .nav-ico ul{
+.search-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.lupa {
+    width: 30px;
+    height: 30px;
+}
+
+#search-box:hover>#search {
+    width: 240px;
+}
+
+.btn-success1 {
+    display: none;
+}
+
+header .nav-ico ul {
     display: flex;
 
 }
 
-header .nav-ico ul li{
-    list-style-type:none;
+header .nav-ico ul li {
+    list-style-type: none;
     padding: 10px;
 }
 
@@ -170,6 +218,6 @@ header .nav-ico ul li{
 /* Configuração para Desktop */
 @media (min-width: 1281px) {
     body {
-        background: rgb(136, 0, 248);
+        /* background: rgb(136, 0, 248); */
     }
 }
