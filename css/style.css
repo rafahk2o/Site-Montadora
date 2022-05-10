@@ -100,6 +100,7 @@ header #logo h1 {
 .btn-success:hover {
     background: #ccc;
     box-shadow: 1px 5px 50px #ccc;
+    cursor: pointer;
 }
 
 #search-box {
