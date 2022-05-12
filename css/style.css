@@ -229,8 +229,10 @@ header .nav-ico ul li {
     background: #f00;
     margin-bottom: 20px;
     margin-top: -165px;
-    background: url(../img/bg.png);
+    background: url(../img/bg.png)  no-repeat;
     background-size: 100%;
+    background-position: 0 -170px;
+
 }
 
 .category {
