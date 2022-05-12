@@ -7,9 +7,10 @@
 
 @import url(reset.css);
 
-body {
+* {
     font-family: 'Raleway', 'sans serif';
     color: #333;
+    text-decoration: none;
 }
 
 #container {
@@ -20,17 +21,18 @@ body {
 }
 
 .box-son {
+    width: 100%;
     min-height: 100px;
     background: #ccc;
-
 }
 
 #container header {
     grid-area: header;
     position: sticky;
+    height: 160px;
     top: 0;
     z-index: 90;
-    background: rgba(255, 255, 255, 0.8);
+    background-image: linear-gradient(#cfcfcf, #f2f2f2);
     box-sizing: border-box;
     box-shadow: 1px 5px 50 px #555;
     display: flex;
@@ -43,40 +45,56 @@ body {
     width: 40%;
     /*   */
     /* display: flex; */
-
 }
 
 header .slide-nav ul {
     display: flex;
     gap: 3%;
+    margin-left: 20px;
+
+
 }
 
 header .slide-nav ul li {
     list-style: none;
     padding: 10px;
+    transition: all 0.3s;
+    /* background-color: rgb(182, 182, 182); */
+    /* border-radius: 40px; */
 }
+
+header .slide-nav ul li:hover {
+    opacity: 0.5;
+}
+
 
 #container #logo {
     width: 15%;
     /* background: lightseagreen; */
     /* display: flex; */
-    margin: 10px 2.5%;
+    margin: 5px 2.5%;
 }
 
 header #logo h1 {
     display: flex;
     width: 150px;
     height: 150px;
-    /* padding: 10px;  */
     background: url(../img/logo.png) no-repeat center center;
     background-size: 110px;
     margin-left: 45px;
-
-
+    /* background-color: aqua; */
 }
 
 
+.right nav ul li img {
+    width: 30px;
+    padding: 0 15px;
+    transition: 0.3s;
+}
 
+.right nav ul li img:hover {
+    opacity: 0.5;
+}
 
 #container .right {
     width: 40%;
@@ -95,7 +113,8 @@ header #logo h1 {
 
 #lang-box .btn-success {
     position: relative;
-    right: 0px;
+    right: 50px;
+    position: fixed;
 }
 
 .btn-success {
@@ -122,12 +141,13 @@ header #logo h1 {
     align-items: center;
     padding: 10px;
     background: #999;
-    border-radius: 40px;
+    border-radius: 30px;
+    box-shadow: 1px 5px 25px #999;
 
 }
 
 #search {
-    height: 40px;
+    height: 30px;
     width: 200px;
     /* padding: 5px 15px; */
     border-radius: 23px;
@@ -142,20 +162,30 @@ header #logo h1 {
 }
 
 .search-btn {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     background: #999;
     display: flex;
     justify-content: center;
     align-items: center;
 
-
 }
 
 .lupa {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
+}
+
+.search-all {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.cols2 {
+    margin-top: 50px;
+
 }
 
 #search-box:hover>#search {
@@ -166,8 +196,12 @@ header #logo h1 {
     display: none;
 }
 
+
+
+
 header .nav-ico ul {
     display: flex;
+
 
 }
 
@@ -178,7 +212,46 @@ header .nav-ico ul li {
 
 #container main {
     grid-area: main;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
 }
+
+.banner{
+    height: 500px;
+    background: #f00;
+    margin-bottom: 20px;
+    margin-top: -165px;
+    background: url(../img/bg2.jfif);
+    background-size: 100%;
+}
+
+.category{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.category .content{
+    width: 31.5%;
+    background: #f00;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.category .content div{
+    width: 50%;
+    min-height: 100px;
+}
+
+
 
 #container footer {
     grid-area: footer;
