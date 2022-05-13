@@ -23,7 +23,9 @@
 .box-son {
     width: 100%;
     min-height: 100px;
-    background: #ccc;
+    /* background: #ccc; */
+
+    
 }
 
 #container header {
@@ -55,6 +57,7 @@ header .slide-nav ul {
     display: flex;
     gap: 3%;
     margin-left: 20px;
+    margin-top: 60px;
 
 
 }
@@ -124,11 +127,12 @@ header #logo h1 {
 .btn-success {
     width: 100px;
     height: 40px;
-    background: #999;
+    background: rgb(27, 27, 27);
     box-shadow: 1px 5px 25px #999;
     border: 1px solid #999;
     border-radius: 23px;
     transition: 0.5s;
+    color: white;
 }
 
 .btn-success:hover {
@@ -144,7 +148,7 @@ header #logo h1 {
     display: flex;
     align-items: center;
     padding: 10px;
-    background: #999;
+    background: rgb(27, 27, 27);
     border-radius: 30px;
     box-shadow: 1px 5px 25px #999;
 
@@ -166,15 +170,16 @@ header #logo h1 {
 }
 
 .search-btn {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
-    background: #999;
+    background: rgb(27, 27, 27);
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
+
 
 .lupa {
     width: 20px;
@@ -205,14 +210,20 @@ header #logo h1 {
 
 header .nav-ico ul {
     display: flex;
+    margin-top: 43px;
+
 
 
 }
 
 header .nav-ico ul li {
     list-style-type: none;
-    padding: 20px;
+    padding: 25px;
+
+
 }
+
+
 
 #container main {
     grid-area: main;
@@ -229,7 +240,7 @@ header .nav-ico ul li {
     background: #f00;
     margin-bottom: 20px;
     margin-top: -165px;
-    background: url(../img/bg.png)  no-repeat;
+    background: url(../img/bg3.jfif) no-repeat;
     background-size: 100%;
     background-position: 0 -170px;
 
@@ -245,12 +256,79 @@ header .nav-ico ul li {
 
 .category .content {
     width: 31.5%;
-    background: #f00;
+    height: 300px;
+    /* background: #f00; */
     margin-bottom: 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+
+}
+
+.category .content img {
+    width: 150px;
+    border-radius: 16px;
+
+
+}
+
+.category .content .btn-card {
+    margin-left: 1px;
+    margin-top: -10px;
+
+
+}
+
+.category .content .btn-card button {
+    background-color: none;
+    border-radius: 15px;
+    color: #555;
+    border-color: #fff;
+    height: 30px;
+    border: none;
+    transition: all 0.3s;
+    box-shadow: 1px 5px 30px rgb(141, 141, 141);
+
+}
+
+.category .content .btn-card button:hover {
+    background-color: rgb(148, 165, 189);
+    color: white;
+    cursor: pointer;
+}
+
+
+
+.category .content .card-cont-1 {
+    color: #555;
+    line-height: 1.5rem;
+    text-align: justify;
+    margin-left: -50px;
+    margin-top: -160px;
+
+
+}
+
+.category .content .card-cont-2 {
+    color: #555;
+    line-height: 1.5rem;
+    text-align: justify;
+    margin-left: -50px;
+    margin-top: -160px;
+}
+
+.category .content .card-cont-3 {
+    color: #555;
+    line-height: 1.5rem;
+    text-align: justify;
+    margin-left: -50px;
+    margin-top: -160px;
 }
 
 .category .content div {
