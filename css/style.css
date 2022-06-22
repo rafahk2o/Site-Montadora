@@ -59,7 +59,6 @@ header .slide-nav ul {
     margin-left: 20px;
     margin-top: 60px;
 
-
 }
 
 header .slide-nav ul li {
@@ -73,7 +72,6 @@ header .slide-nav ul li {
 header .slide-nav ul li:hover {
     opacity: 0.5;
 }
-
 
 #container #logo {
     width: 15%;
@@ -91,7 +89,6 @@ header #logo h1 {
     margin-left: 45px;
     /* background-color: aqua; */
 }
-
 
 .right nav ul li img {
     width: 30px;
@@ -151,7 +148,6 @@ header #logo h1 {
     background: rgb(27, 27, 27);
     border-radius: 30px;
     box-shadow: 1px 5px 25px #999;
-
 }
 
 #search {
@@ -166,7 +162,6 @@ header #logo h1 {
     color: white;
     width: 0;
     transition: .5s;
-
 }
 
 .search-btn {
@@ -204,8 +199,6 @@ header #logo h1 {
 .btn-success1 {
     display: none;
 }
-
-
 
 
 header .nav-ico ul {
